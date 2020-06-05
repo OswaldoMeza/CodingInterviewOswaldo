@@ -1,0 +1,108 @@
+/*Tags*/
+body {
+    display: grid;
+    justify-items: center;
+}
+
+span {
+    padding: 0px 0px 0px 0px;
+    width: 110px;
+    height: 20px;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+}
+
+/*Classes*/
+
+.crownImg {
+    justify-self: end;
+    position: absolute;
+    margin-right: 40px;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+.employeeBio {
+    overflow: hidden;
+    height: 200px;
+    width: 250px;
+    margin: 0 0 0 0;
+}
+.employeeBio:hover {
+    overflow: auto;
+}
+
+.employeeCard {
+    padding: 0px 25px 0px 25px;
+    border-style: solid;
+    border-color: black;
+    height: 650px;
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    transition: background-color 500ms ease-out;
+}
+.employeeCard:hover {
+    background-color: goldenrod;
+    transition: background-color 500ms ease-out;
+}
+
+.employeeInfoCards {
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    justify-items: center;
+    position: relative;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+
+.employeeName {
+    justify-self: center;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 0 0;
+}
+
+.profilePic{
+    border-radius: 50%;
+    border-style: solid;
+    margin-top: 20px;
+    height: 200px;
+    width: auto;
+    justify-self: center;
+
+}
+
+.roleDiv{
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    justify-self: start;
+    column-gap: 20px;
+}
+/* Tablet Size */
+@media only screen and (max-width: 768px) {
+    .employeeInfoCards {
+        display: grid;
+        grid-template-columns: 300px 300px ;
+        justify-items: center;
+        position: relative;
+        column-gap: 50px;
+        row-gap: 30px;
+    
+    }
+}
+/* Phone Size */
+@media screen and (max-width:480px){
+    .employeeInfoCards {
+        display: grid;
+        grid-template-columns: 300px;
+        justify-items: center;
+        position: relative;
+        column-gap: 50px;
+        row-gap: 30px;
+    
+    }
+}
